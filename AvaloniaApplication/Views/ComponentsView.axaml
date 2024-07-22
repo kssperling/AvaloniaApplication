@@ -1,0 +1,30 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="350" d:DesignHeight="450"
+             xmlns:vm="clr-namespace:AvaloniaApplication.ViewModels"
+			 x:Class="AvaloniaApplication.Views.ComponentsView"
+			 x:DataType="vm:ComponentsViewModel">
+	<StackPanel>
+		<TextBlock Text="Component"></TextBlock>
+		<CheckBox>Transform Component</CheckBox>
+		<Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *, *, *, *" >
+		<TextBlock Text="Position" Grid.Column="0" Grid.Row="0"></TextBlock>
+		<TextBlock Text="X" Grid.Column="1" Grid.Row="0" TextAlignment="Right" Margin="5"></TextBlock>
+		<TextBox Grid.Column="2" Grid.Row="0" Text="{Binding Value}"/>
+		<TextBlock Text="Y" Grid.Column="3" Grid.Row="0" TextAlignment="Right" Margin="5"></TextBlock>
+		<TextBox Grid.Column="4" Grid.Row="0" Text="{Binding Value}"/>
+			<TextBlock Text="Rotation" Grid.Column="0" Grid.Row="1"></TextBlock>
+			<TextBlock Text="X" Grid.Column="1" Grid.Row="1" TextAlignment="Right" Margin="5"></TextBlock>
+			<TextBox Grid.Column="2" Grid.Row="1" Text="0"/>
+			<TextBlock Text="Y" Grid.Column="3" Grid.Row="1" TextAlignment="Right" Margin="5"></TextBlock>
+			<TextBox Grid.Column="4" Grid.Row="1" Text="0"/>
+			<TextBlock Text="Scale" Grid.Column="0" Grid.Row="2"></TextBlock>
+			<TextBlock Text="X" Grid.Column="1" Grid.Row="2" TextAlignment="Right" Margin="5"></TextBlock>
+			<TextBox Grid.Column="2" Grid.Row="2" Text="10"/>
+			<TextBlock Text="Y" Grid.Column="3" Grid.Row="2" TextAlignment="Right" Margin="5"></TextBlock>
+			<TextBox Grid.Column="4" Grid.Row="2" Text="10"/>
+		</Grid>
+	</StackPanel>
+</UserControl>
