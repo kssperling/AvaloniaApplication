@@ -7,14 +7,18 @@ using AvaloniaApplication.Domain;
 
 namespace AvaloniaApplication.ViewModels
 {
-    public class GameViewModel : ViewModelBase
+    public class GameViewModel
     {
         private ServiceProvider _serviceProvider;
         public GameViewModel(ServiceProvider serviceProvider) 
         {
             _serviceProvider = serviceProvider;
             MemoryService service = (MemoryService)serviceProvider.GetService<MemoryService>();
-            service.UpdateEntity(new AvaloinaApplication.Domain.Entity() { value = 24 });              
+            service.UpdateEntity(new AvaloinaApplication.Domain.Entity() { value = 24 });
+
+
+
+              
         }
     }
 }
